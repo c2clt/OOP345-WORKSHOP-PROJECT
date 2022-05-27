@@ -1,0 +1,2 @@
+E:\courses\3rd\OOP345\OOP345-Project\MS1\Debug\MS1.exe
+E:\courses\3rd\OOP345\OOP345-Project\MS1\Debug\MS1.pdb

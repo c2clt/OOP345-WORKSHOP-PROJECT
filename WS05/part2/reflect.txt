@@ -1,0 +1,22 @@
+// OOP345 Workshop 5: Functions and Error Handling
+// File:  reflect.txt
+// Name:  Jingmin (Jessica) Zhou
+// Email: jzhou175@myseneca.ca
+// ID:    119766194
+// Date:  06/27/2020
+
+In Workshop 5 (Functions and Error Handling), I have learned how to design and code a template class (e.g. Collection<T> for managing a series of Books or Movies), utilize functor and lambda expression in different requirements, and handle different types of exceptions, e.g. missing file and out-of-range.
+
+Firstly, a functor is function object which can store a state and overload the function call operator, while a lambda expression is an anonymous function nested within the body of another function and it can be as function object that is called only once. In this workshop, SpellChecker functor is used to fix the spelling errors in Book collection and Movie collection and lambda expression is called only once to fix the book prices.
+
+Secondly, the constructor for SpellChecker generates an exception when the file is missing and the exception is handled through outputting the error message to inform the client.  Instead of exception throwing and handling, condition can be used to check target file existing or not. For example, an error message is directly output in the constructor and the client side when the file is missing (if(file.is_open() == false){}). Otherwise, the content of file is loaded when condition is true (else {}).
+
+Thirdly, the identical logic in the classes Book and Movie could be abstracted and put in another Module, e.g. Utility, and include it in Book and Movie and call the relative logic as required. For example, trim(string&) and find(‘,’ position)  could be abstracted, which will reduce lots of redundancy and make code more clean in Book and Movie.
+
+Finally, the default constructor for Book and Movie is necessary and cannot be removed. If the Book(){} or Movie(){} is removed, there will be compiling error (no appropriate default constructor available) in  Collection.h file. In Collection<T>& operator+=(const T&), the default constructor is called when resizing the collection array and adding the new item into it.
+===========================================================================================================================================
+NO Quiz for this week.
+
+
+
+

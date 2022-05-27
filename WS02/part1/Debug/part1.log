@@ -1,0 +1,3 @@
+﻿  RecordSet.cpp
+E:\courses\3rd\OOP345\Workshops\WS02\part1\RecordSet.cpp(36,22): warning C4018: '<': signed/unsigned mismatch
+  part1.vcxproj -> E:\courses\3rd\OOP345\Workshops\WS02\part1\Debug\part1.exe

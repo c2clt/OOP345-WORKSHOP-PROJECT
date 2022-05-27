@@ -1,0 +1,20 @@
+// OOP345 Workshop 7: STL Algorithms
+// File:  reflect.txt
+// Name:  Jingmin (Jessica) Zhou
+// Email: jzhou175@myseneca.ca
+// ID:    119766194
+// Date:  07/15/2020
+In Workshop 7 (STL Algorithms), I have learned how to copy data from a file to a sequential container, e.g. vector<> or list<>, use the numeric and algorithm library to implement functions, e.g. accumulating, sorting and traversing, use a lambda expression to specify an operation on each data in a data set, e.g. list<Song>.
+
+Firstly, the following STL functions were used in this workshop.
+1. accumulate() as accumulate(songs.begin(), songs.end(), (size_t)0u, [](size_t init, Song s) { return init + s.m_length; }): used to calculate the total playing time; the element of Song as second parameter of Fn boper used to specify and accumulate the length of Song  into the init time;
+2. sort() as std::sort(songs.begin(), songs.end(), compare): used to sort the songs based on different field names; compare function was defined through comparing length, title or album of songs;
+3. any_of() as any_of(songs.begin(), songs.end(), [name](const Song s) { return s.m_artist == name; }): used to check if the given artist name is in the list; the predicate function returns true if there is any artist name equal to the given name.
+4. for_each(InputIterator f, InputIterator l, Fn predicate): used to traverse the element in songs and apply the defined predicate function. Predicate was defined as required, e.g. in display() predicate is used to print each element.
+
+Secondly, STL algorithms are designed and optimized for the STL containers, so they are more effective and reduce the code logic complexity. Instead of manually implementing functionalities by using loops, there is no need to worry about the definition of iterator and operations on it.
+
+Thirdly, it is expected to sort the songs list as a given field name, e.g. “length”, “title” and “album”. If an invalid field name was entered, an exception would be thrown and handled in sort() function, which would print the error message to hint the client and terminate the program.
+===========================================================================================================================================
+Quiz 5 reflection: 12/12.
+

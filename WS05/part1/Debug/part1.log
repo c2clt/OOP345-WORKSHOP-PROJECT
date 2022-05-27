@@ -1,0 +1,7 @@
+﻿  Book.cpp
+E:\courses\3rd\OOP345\Workshops\WS05\part1\Book.cpp(65,23): warning C4267: 'argument': conversion from 'size_t' to 'const _Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+  part1.vcxproj -> E:\courses\3rd\OOP345\Workshops\WS05\part1\Debug\part1.exe

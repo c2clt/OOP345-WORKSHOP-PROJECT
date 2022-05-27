@@ -1,0 +1,23 @@
+// OOP345 Workshop 2: Move and Copy Semantics
+// File:  reflect.txt
+// Name:  Jingmin (Jessica) Zhou
+// Email: jzhou175@myseneca.ca
+// ID:    119766194
+// Date:  06/03/2020
+
+In Workshop 2 (Move and Copy Semantics), I have learned how to retrieve and count the records from a text file using a input file stream object, monitor the time spent on a particular task using the std::chrono library, and implement copy and move semantics for a class with a resource.
+
+Firstly, the copy and move semantics are different, because the copy constructor and copy assignment aim to copy the elements of the resource while the move constructor and move assignment aim to move the elements of the resource. Copy semantics must allocate its own memory for the resource and copy the whole memory block will take times, but move semantics just move the reference from the old object to a new one and leave the old one in an invalid or empty state. Therefore, move will be efficient than copy, especially for the large black of resource memory. In this workshop, the difference of time spent on copy and move process demonstrate the efficiency of move semantics, e.g. (995311600 nanoseconds for copy constructor) vs (600 nanoseconds for move constructor).
+
+Secondly, recording the number of single space in the file is used to count the number of records because the requirement is “the record delimiter should be a single space”. There is no need to think about other delimiters, like new line, which make the problem easy. 
+
+Thirdly, it’s my first time to use the std::chrono library to monitor the time spent on a particular task. In this case, it’s used to record the time spent on the processes of copy and move semantics and demonstrate the efficiency difference between them.
+
+===========================================================================================================================================
+Quiz 2 Reflection (27/29)
+
+QT18 Why cloning of a polymorphic object at different stages of execution is not straight forward and requires extra information?
+A: In order to allocate memory for the copy, the run-time needs to know the dynamic type at the moment of copying. I misunderstood the given answers and chose “None of them”.
+
+QT about example Code 4: the output of the second iteration in line 42 should be “2 5”.
+ With the consideration of the sequence of output, I chose “None of them” instead of the expected answer “5 2”.

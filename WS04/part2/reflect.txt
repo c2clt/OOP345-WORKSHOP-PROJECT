@@ -1,0 +1,21 @@
+// OOP345 Workshop 4: Containers
+// File:  reflect.txt
+// Name:  Jingmin (Jessica) Zhou
+// Email: jzhou175@myseneca.ca
+// ID:    119766194
+// Date:  06/20/2020
+
+In Workshop 4 (Containers), I have learned how to design and code classes with the relationships of composition and aggregation, e.g. Reservation vs Restaurant, Reservation vs ConfirmationSender, manage a dynamically allocated array of pointers to objects for a class, and use string member functions (std::substr(), std::erase()) to fetch its substrings based on different delimiters, e.g. ‘:’, ‘,’, ‘ ’.
+
+Firstly, composition and aggregation represent the relationships between classes, which are different based on degree of coupling between classes. A composition is a strong relationship which means the composer object owns the component object and parent class completely contains child class and determines its lifetime, while an aggregation is a weaker relationship which means the aggregator has an instance of another class and the child class determines its own lifetime.
+
+Secondly, when implementing copy and move functions in composition and aggregation relationships, the composition is responsible for copying and destroying its resource, e.g. Restaurant module, but the aggregation class is not responsible for copying or destroying its resource, e.g. ConfirmationSender module.  
+
+Thirdly, in order to read the reservation information from data file and store it in the Reservation module, the first thing is to trim the raw information, like removing all the spaces in the string (trim() function in this workshop). A series of substring are generated based on different delimiters (e.g. ‘:’ and ‘,’) and then stored in data members of Reservation. For size_t type data members, it is needed to transfer the string to int using stoi() function before storing them.
+
+===========================================================================================================================================
+Quiz 4 Reflection (55/56)
+Code 3: the output of the fifth iteration in Line 15 should be nothing (None of Above), but I chose 100, that was a mistake.
+
+
+

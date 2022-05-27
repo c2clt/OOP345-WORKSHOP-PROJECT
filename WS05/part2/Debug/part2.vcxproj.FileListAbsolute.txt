@@ -1,0 +1,2 @@
+E:\courses\3rd\OOP345\Workshops\WS05\part2\Debug\part2.exe
+E:\courses\3rd\OOP345\Workshops\WS05\part2\Debug\part2.pdb
